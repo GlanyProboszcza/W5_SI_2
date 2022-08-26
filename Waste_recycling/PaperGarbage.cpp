@@ -1,6 +1,5 @@
 #include "PaperGarbage.h"
 
-bool PaperGarbage::squeeze()
-{
-    return true;
+bool PaperGarbage::squeeze() {
+    isSqueezed = true;
 }

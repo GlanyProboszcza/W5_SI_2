@@ -8,7 +8,7 @@
 
 class Dustbin {
 public:
-	std::string Color;
+	std::string color;
 	std::vector <std::string> paperContent; // [PaperGarbage] ;
 	std::vector <std::string> plasticContent; // [PlasticGarbage] ;
 	std::vector <std::string> houseWasteContent; // [Garbage] ;

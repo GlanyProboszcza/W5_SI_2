@@ -3,12 +3,9 @@
 #include <string>
 
 
-class Garbage
-{
+class Garbage {
 public:
-	std::string Name;
-
+	std::string name;
 	std::string getName();
-
 };
 

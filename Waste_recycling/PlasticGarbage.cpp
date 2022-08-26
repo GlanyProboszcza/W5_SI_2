@@ -1,6 +1,5 @@
 #include "PlasticGarbage.h"
 
-bool PlasticGarbage::clean()
-{
-	return true;
+bool PlasticGarbage::clean() {
+	isClean = true;
 }
