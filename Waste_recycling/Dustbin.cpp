@@ -5,21 +5,21 @@ std::exception Dustbin::DustbinContentError() {
 	return ;
 }
 
-void Dustbin::throwOutGarbage(Garbage) {
-	houseWasteContent.push_back(Garbage);
+void Dustbin::throwOutGarbage(Garbage garbage) {
+	houseWasteContent.push_back(garbage);
 }
 
-void Dustbin::throwOutPaperGarbage(PaperGarbage) {
-	if (PaperGarbage::isSqueezed == true) {
-		paperContent.push_back(Garbage);
+void Dustbin::throwOutPaperGarbage(PaperGarbage paperGarbage) {
+	if (paperGarbage.isSqueezed) {
+		paperContent.push_back(paperGarbage);
 	}
 	else
 		DustbinContentError();
 }
 
-void Dustbin::throwOutPlasticGarbage(PlasticGarbage) {
-	if (PlasticGarbage::isClean == true) {
-		plasticContent.push_back(Garbage);
+void Dustbin::throwOutPlasticGarbage(PlasticGarbage plasticGarbage) {
+	if (plasticGarbage.isClean) {
+		plasticContent.push_back(plasticGarbage);
 	}
 	else
 		DustbinContentError();

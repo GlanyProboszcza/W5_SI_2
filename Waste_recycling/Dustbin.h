@@ -9,9 +9,9 @@
 class Dustbin {
 public:
 	std::string color;
-	std::vector <std::string> paperContent; // [PaperGarbage] ;
-	std::vector <std::string> plasticContent; // [PlasticGarbage] ;
-	std::vector <std::string> houseWasteContent; // [Garbage] ;
+	std::vector <PaperGarbage> paperContent; // [PaperGarbage] ;
+	std::vector <PlasticGarbage> plasticContent; // [PlasticGarbage] ;
+	std::vector <Garbage> houseWasteContent; // [Garbage] ;
 	
 	std::exception DustbinContentError();
 	void throwOutGarbage(Garbage);
