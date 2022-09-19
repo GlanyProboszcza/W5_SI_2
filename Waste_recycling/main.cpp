@@ -20,4 +20,23 @@ int main() {
 	catch (DustbinContentError& error) {
 		std::cout << "\n [!] " << error.getMessage();
 	}
+	
+
+	PlasticGarbage plastik;
+
+	try {
+		dustbin.throwOutPlasticGarbage(plastik);
+	}
+	catch (DustbinContentError& error) {
+		std::cout << "\n [!] " << error.getMessage();
+	}
+	plastik.clean();
+
+	try {
+		dustbin.throwOutPlasticGarbage(plastik);
+	}
+	catch (DustbinContentError& error) {
+		std::cout << "\n [!] " << error.getMessage();
+	}
+
 }
