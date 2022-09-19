@@ -1,10 +1,5 @@
 #include "Dustbin.h"
 
-std::exception Dustbin::DustbinContentError() {
-	// ??? nie mam pojecia
-	return ;
-}
-
 void Dustbin::throwOutGarbage(Garbage garbage) {
 	houseWasteContent.push_back(garbage);
 }
@@ -14,7 +9,7 @@ void Dustbin::throwOutPaperGarbage(PaperGarbage paperGarbage) {
 		paperContent.push_back(paperGarbage);
 	}
 	else
-		DustbinContentError();
+		throw(DustbinContentError("Paper not squeezed"));
 }
 
 void Dustbin::throwOutPlasticGarbage(PlasticGarbage plasticGarbage) {
@@ -22,7 +17,7 @@ void Dustbin::throwOutPlasticGarbage(PlasticGarbage plasticGarbage) {
 		plasticContent.push_back(plasticGarbage);
 	}
 	else
-		DustbinContentError();
+		throw(DustbinContentError("Plastic not clean"));
 }
 
 void Dustbin::emptyContents() {

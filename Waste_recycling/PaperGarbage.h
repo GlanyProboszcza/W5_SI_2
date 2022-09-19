@@ -3,7 +3,8 @@
 
 class PaperGarbage : public Garbage {
 public:
+	PaperGarbage();
 	bool isSqueezed;
-	bool squeeze();
+	void squeeze();
 };
 

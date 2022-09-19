@@ -5,6 +5,7 @@
 #include "Garbage.h"
 #include "PaperGarbage.h"
 #include "PlasticGarbage.h"
+#include "DustbinContentError.h"
 
 class Dustbin {
 public:
@@ -13,13 +14,11 @@ public:
 	std::vector <PlasticGarbage> plasticContent; // [PlasticGarbage] ;
 	std::vector <Garbage> houseWasteContent; // [Garbage] ;
 	
-	std::exception DustbinContentError();
-	void throwOutGarbage(Garbage);
-	void throwOutPaperGarbage(PaperGarbage);
-	void throwOutPlasticGarbage(PlasticGarbage);
+	void throwOutGarbage(Garbage garbage);
+	void throwOutPaperGarbage(PaperGarbage paperGarbage);
+	void throwOutPlasticGarbage(PlasticGarbage plasticGarbage);
 	void emptyContents();
 
 	std::string getColor();
 
 };
-

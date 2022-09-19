@@ -1,5 +1,10 @@
 #include "PaperGarbage.h"
 
-bool PaperGarbage::squeeze() {
+PaperGarbage::PaperGarbage() {
+    this ->name = "papier";
+    isSqueezed = 0;
+}
+
+void PaperGarbage::squeeze() {
     isSqueezed = true;
 }

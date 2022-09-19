@@ -4,6 +4,6 @@
 class PlasticGarbage : public Garbage {
 public:
 	bool isClean;
-	bool clean();
+	void clean();
 };
 

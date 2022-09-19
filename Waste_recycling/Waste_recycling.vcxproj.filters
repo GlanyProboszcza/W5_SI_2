@@ -30,6 +30,9 @@
     <ClCompile Include="Dustbin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DustbinContentError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Garbage.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Dustbin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DustbinContentError.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
