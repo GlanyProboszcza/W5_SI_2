@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Dustbin.cpp" />
+    <ClCompile Include="Dustbin9000.cpp" />
     <ClCompile Include="DustbinContentError.cpp" />
     <ClCompile Include="Garbage.cpp" />
     <ClCompile Include="main.cpp" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dustbin.h" />
+    <ClInclude Include="Dustbin9000.h" />
     <ClInclude Include="DustbinContentError.h" />
     <ClInclude Include="Garbage.h" />
     <ClInclude Include="PaperGarbage.h" />

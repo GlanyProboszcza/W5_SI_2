@@ -7,4 +7,3 @@ public:
 	bool isClean;
 	void clean();
 };
-
